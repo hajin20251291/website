@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>💗my cute pink Website💗</title>
+  </head>
+<body>
+<header>
+    <h1>💗hajin's pink house💗</h1>
+    <div class="buttons-container">
+        <a href="https://www.instagram.com/hajinnx_/" class="btn">Instagram</a>
+        <a href="https://blog.naver.com/hajinzzing59" class="btn">Blog</a>
+        <a href="https://www.youtube.com/watch?v=p8P2c5Djczs" class="btn">Music</a>
+    </div>
+</header>
+<main>
+
+    <section class="hero">
+        <p>
+            하진이의 웹사이트에 온 걸 환영해!!<br> 여기서 나에 대해 많이 알아가도록 하렴!!૮ ․ ․ ྀིა
+        </p>
+        
+    <div class="counter">
+      <p>👀이 페이지를 방문한 횟수: <span id="visit-count">0</span>👀</p>
+    </div>
+
+    <script>
+          let visitCount = localStorage.getItem('visitCount') || 0;
+          visitCount++;
+          localStorage.setItem('visitCount', visitCount);
+          document.getElementById('visit-count').innerText = visitCount;
+    </script>
+
+    </section>
+    
+    <section class="hero">
+        <h2>About hajin🔍</h2>
+        <div class="intro">
+        <img src="images/my-photo.jpg.png" alt="Hajin's photo" class="profile-pic">
+        <p>이름 : 오하진
+            <br>나이 : 20살 
+            <br>전화번호 : 010-3694-8592
+            <br>MBTI : INFP 
+            <br>혈액형 : O형 
+            <br>좋아하는것 : 음식, 놀기, 자기, 로블록스 등
+            <br>싫어하는것 : 주사, 야채, 토, 공부, 알바 등등
+        </p>
+        </div>
+    </section >
+        
+    <section class="hero">
+        <h2>hajin's favorite</h2>
+        <img src="https://i.pinimg.com/736x/b8/52/a5/b852a5ada0b77182897ff42bf54b35cb.jpg" alt="Hajin's photo" class="profile-pic">
+        <img src="https://i.pinimg.com/736x/4a/ea/b7/4aeab798a0cb0452fd9716e71821c7dc.jpg" alt="Hajin's photo" class="profile-pic">
+        <img src="https://i.pinimg.com/736x/ab/c6/95/abc6954ae384e7e2f1973ca1196c661d.jpg" alt="Hajin's photo" class="profile-pic">
+        <img src="https://i.pinimg.com/736x/e3/19/a1/e319a14287abdfca9d48886fea04b330.jpg" alt="Hajin's photo" class="profile-pic">
+    </section>
+
+   <section class="split-section">
+  <div class="left-box">
+    <h2>hajin's favorite songs 🎶</h2>
+    <div class="songs-container">
+        <a href="https://www.youtube.com/watch?v=ft70sAYrFyY">NewJeans - Bubble Gum</a><br>
+        <a href="https://www.youtube.com/watch?v=ZncbtRo7RXs">NewJeans - Supernatural</a><br>
+        <a href="https://www.youtube.com/watch?v=Km71Rr9K-Bw">NewJeans - Ditto</a><br>
+        <a href="https://www.youtube.com/watch?v=BCZE-44jp_I">Stray Kids - charmar</a>
+    </div>
+  </div>
+  
+  <div class="right-box">
+    <h2>hajin's school 🏫</h2>
+    <p>용호초등학교</p>
+    <p>오륙도중학교</p>
+    <p>부산문화여고(유아교육과)</p>   
+    <p>울산대학교(ICT융합학부)</p> 
+  </div>
+</section>
+
+</main>
+<footer>
+    <h2>𐦂𖨆𐀪𖠋 Thanks for visiting! 𐦂𖨆𐀪𖠋 </h2>
+</footer>
+<script src="script.js"></script>
+</body>
